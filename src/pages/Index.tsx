@@ -41,7 +41,9 @@ const Index = () => {
                 <Cpu className="w-3 h-3 mr-1" />
                 AI-Powered
               </Badge>
-              <Button variant="neural" size="sm">
+              <Button variant="neural" size="sm" onClick={() => {
+                document.getElementById('processor')?.scrollIntoView({ behavior: 'smooth' });
+              }}>
                 <GitBranch className="w-4 h-4 mr-2" />
                 View Demo
               </Button>
@@ -82,12 +84,16 @@ const Index = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="intelligence" size="lg" className="w-full sm:w-auto">
+              <Button variant="intelligence" size="lg" className="w-full sm:w-auto" onClick={() => {
+                document.getElementById('processor')?.scrollIntoView({ behavior: 'smooth' });
+              }}>
                 <Brain className="w-5 h-5 mr-2" />
                 Start Processing
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto" onClick={() => {
+                document.getElementById('architecture')?.scrollIntoView({ behavior: 'smooth' });
+              }}>
                 <Network className="w-5 h-5 mr-2" />
                 View Architecture
               </Button>
@@ -109,7 +115,7 @@ const Index = () => {
       </section>
 
       {/* Main Processor */}
-      <section className="py-20">
+      <section id="processor" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -182,7 +188,7 @@ const Index = () => {
       </section>
 
       {/* Architecture Overview */}
-      <section className="py-20">
+      <section id="architecture" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Card className="p-8 bg-gradient-to-br from-background via-accent/10 to-secondary/10 border-border/50">
