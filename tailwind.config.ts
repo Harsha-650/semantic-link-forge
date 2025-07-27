@@ -52,6 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				neural: {
+					DEFAULT: 'hsl(var(--neural))',
+					foreground: 'hsl(var(--neural-foreground))'
+				},
+				intelligence: {
+					DEFAULT: 'hsl(var(--intelligence))',
+					foreground: 'hsl(var(--intelligence-foreground))'
+				},
+				processing: {
+					DEFAULT: 'hsl(var(--processing))',
+					foreground: 'hsl(var(--processing-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

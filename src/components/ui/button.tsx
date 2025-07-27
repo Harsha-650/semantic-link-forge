@@ -18,6 +18,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        neural: "bg-neural text-neural-foreground hover:bg-neural/90 shadow-[var(--shadow-neural)] transition-[var(--transition-neural)]",
+        intelligence: "bg-gradient-to-r from-neural to-intelligence text-foreground hover:opacity-90 shadow-[var(--shadow-glow)] transition-[var(--transition-neural)]",
+        processing: "bg-processing text-processing-foreground hover:bg-processing/90 shadow-[var(--shadow-processing)] transition-[var(--transition-smooth)]",
       },
       size: {
         default: "h-10 px-4 py-2",
